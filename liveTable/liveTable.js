@@ -87,8 +87,8 @@ angular.module('myApp.liveTable', ['ngRoute'])
 
 		if($scope.arrangeOptions.defaultValue == 'Price (high-low)' || $scope.arrangeOptions.defaultValue == 'Price (low-high)'){selectedValue=1;}
 		else if($scope.arrangeOptions.defaultValue == 'Traded Volume (high-low)' || $scope.arrangeOptions.defaultValue == 'Traded Volume (low-high)'){selectedValue=2;}
-		else if($scope.arrangeOptions.defaultValue == 'Price Increased % (1hr)' || $scope.arrangeOptions.defaultValue == 'Price Decreased % (1hr)'){selectedValue=3;}
-		else if($scope.arrangeOptions.defaultValue == 'Price Increased % (24hr)' || $scope.arrangeOptions.defaultValue == 'Price Decreased % (24hr)'){selectedValue=4;}
+		else if($scope.arrangeOptions.defaultValue == 'Price Increased % (1hr)' || $scope.arrangeOptions.defaultValue == 'Price Dropped % (1hr)'){selectedValue=3;}
+		else if($scope.arrangeOptions.defaultValue == 'Price Increased % (24hr)' || $scope.arrangeOptions.defaultValue == 'Price Dropped % (24hr)'){selectedValue=4;}
 		else {selectedValue=5;};
 
 		if($scope.arrangeOptions.defaultValue == 'Price (high-low)'|| $scope.arrangeOptions.defaultValue == 'Price Increased % (1hr)'
