@@ -96,7 +96,7 @@ angular.module('myApp.liveTable', ['ngRoute'])
 			|| $scope.arrangeOptions.defaultValue =='Price Increased % (7 days)'){
 
 			$scope.searchedDataArray.sort(function(a, b) { //sort them in decreasing order
-	    		return a[selectedValue] > b[selectedValue] ? -1 : 1;
+	    		return a[selectedValue] < b[selectedValue] ? 1 : -1;
 			});
 		}	
 		else{
