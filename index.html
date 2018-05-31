@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <title>Crypto Market</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="liveTable/liveTable.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body id="bodyB">
+  <h1 id="mainHeading" class="page-header text-center" >CRYPTOMARKET <img ng-src="images/cryptoMarket.png" width="70" height="70" ></h1>
+
+  <h2 id="motto" class="text-center">BUY SELL FLOURISH</h2>
+
+
+    <nav class="navbar navbar-expand navbar-success">
+  
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link text-dark" href="#/home">Home</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link text-dark" href="#/liveTable">Live Table</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+  <div ng-view></div>
+</br>
+ 
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="liveTable/liveTable.js"></script>
+  <script src="home/home.js"></script>
+
+</body>
+</html>

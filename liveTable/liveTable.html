@@ -1,0 +1,42 @@
+
+<label for="arrangeOption" class="ml-3  text-info">Arrange By:</label>
+  <select ng-options="option for option in arrangeOptions.optionTypes" 
+            ng-model="arrangeOptions.defaultValue"
+            id = 'arrangeOption'
+            ng-change="reArrangeTable()">
+   </select>
+
+<span class="ml-4 text-info text-right">
+	Search:<input type="text" ng-model="searchedData" class="ml-1" ng-keyup = "updateTableData()">
+</span>
+
+<table class="table table-striped text-center">
+	<thead class="thead-light">
+		<tr>
+			<th scope="col">Index</th>
+			<th scope="col">Name</th>
+			<th scope="col">Price</th>
+			<th scope="col">Volume (24 hr)</th>
+			<th scope="col">% Change (1hr)</th>
+			<th scope="col">% Change (24hr)</th>
+			<th scope="col">% Change (7 days)</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr ng-repeat= "values in searchedDataArray">
+			<td scope="col">{{$index+1}}</td>
+			<td scope="col">{{values[0]}}</td>
+			<td scope="col">{{values[1] | currency}}</td> <!--currency filter -->
+			<td scope="col">{{values[2]}}</td>
+			<td scope="col">{{values[3]}}</td>
+			<td scope="col">{{values[4]}}</td>
+			<td scope="col">{{values[5]}}</td>
+		</tr>
+	</tbody>
+	
+
+</table>
+</br>
+<div class="ml-4 text-success" >{{currentTime}}</div>
+

@@ -1,0 +1,35 @@
+#bodyB{
+	background-color: oldlace;
+}
+
+#mainHeading{
+	color:green;
+	font-size: 50px;
+	text-shadow: 2px 2px blue;
+}
+
+
+
+#motto{
+	color:green;
+	font-size: 25px;
+	text-shadow: 1px 1px blue;
+
+}
+.nav-item{
+	font-size: 25px;
+}
+
+@keyframes rotatingLogo{
+	0% {transform: rotate(-360deg);}
+	25%:{transform: rotate(72deg);}
+	50%:{transform: rotate(72deg);}
+	75%:{transform: rotate(72deg);}
+	100%:;{transform: rotate(72deg);}
+}
+
+img {
+    animation-name: rotatingLogo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
